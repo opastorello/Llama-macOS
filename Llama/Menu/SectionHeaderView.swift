@@ -7,7 +7,7 @@ final class SectionHeaderView: ItemView {
   private var linkUrl: URL?
   private let linkLabel = Theme.secondaryLabel()
 
-  init(title: String = "Installed", linkText: String? = nil, linkUrl: URL? = nil) {
+  init(title: String = String(localized: "Installed"), linkText: String? = nil, linkUrl: URL? = nil) {
     self.linkUrl = linkUrl
     super.init(frame: .zero)
 

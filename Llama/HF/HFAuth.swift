@@ -94,12 +94,12 @@ enum HFAuth {
     var errorDescription: String? {
       switch self {
       case .denied(let detail):
-        return detail.map { "Hugging Face didn’t authorize the app: \($0)" }
-          ?? "Hugging Face didn’t authorize the app."
+        return detail.map { String(localized: "Hugging Face didn’t authorize the app: \($0)") }
+          ?? String(localized: "Hugging Face didn’t authorize the app.")
       case .stateMismatch:
-        return "The sign-in response didn’t match the request. Try again."
+        return String(localized: "The sign-in response didn’t match the request. Try again.")
       case .requestFailed(let detail):
-        return "Couldn’t complete sign-in: \(detail)"
+        return String(localized: "Couldn’t complete sign-in: \(detail)")
       }
     }
   }

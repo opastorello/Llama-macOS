@@ -56,13 +56,13 @@ enum LlamaInstaller {
     var errorDescription: String? {
       switch self {
       case .unsupportedHardware(let detail):
-        return "No prebuilt llama binary for this Mac (\(detail))."
+        return String(localized: "No prebuilt llama binary for this Mac (\(detail)).")
       case .downloadFailed(let detail):
-        return "Download failed: \(detail)"
+        return String(localized: "Download failed: \(detail)")
       case .decompressFailed(let detail):
-        return "Couldn't unpack the llama binary: \(detail)"
+        return String(localized: "Couldn't unpack the llama binary: \(detail)")
       case .installFailed(let detail):
-        return "Couldn't install the llama binary: \(detail)"
+        return String(localized: "Couldn't install the llama binary: \(detail)")
       }
     }
   }

@@ -22,16 +22,16 @@ final class CLISetupView: ItemView {
     let views: [NSView]
     switch state {
     case .installing:
-      let title = Theme.primaryLabel("Setting up llama…")
+      let title = Theme.primaryLabel(String(localized: "Setting up llama…"))
       let description = wrappingLabel(
-        "Downloading the engine. This only happens once.")
+        String(localized: "Downloading the engine. This only happens once."))
       views = [title, description]
 
     case .failed(let message):
-      let title = Theme.primaryLabel("Couldn’t download engine")
+      let title = Theme.primaryLabel(String(localized: "Couldn’t download engine"))
       let description = wrappingLabel(
-        "Llama needs to download llama.cpp once, but the download failed. " + message)
-      views = [title, description, actionLink("Retry")]
+        String(localized: "Llama needs to download llama.cpp once, but the download failed. \(message)"))
+      views = [title, description, actionLink(String(localized: "Retry"))]
 
     case .idle:
       // Not rendered when idle; guard anyway so the view is never blank-but-present.

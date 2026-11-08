@@ -29,8 +29,8 @@ final class BrowseModelsRow: ItemView {
     icon.inactiveTintColor = Theme.Colors.modelIconTint
 
     // Two-line text echoing a model row: primary name over a tertiary caption.
-    let title = Theme.primaryLabel("Browse models")
-    let subtitle = Theme.tertiaryLabel("Full catalog on the web")
+    let title = Theme.primaryLabel(String(localized: "Browse models"))
+    let subtitle = Theme.tertiaryLabel(String(localized: "Full catalog on the web"))
     let textColumn = NSStackView(views: [title, subtitle])
     textColumn.orientation = .vertical
     textColumn.alignment = .leading
@@ -45,7 +45,7 @@ final class BrowseModelsRow: ItemView {
     // arrow points up-and-out to signal navigating away to the web.
     let action = NSImageView()
     Theme.configure(
-      action, symbol: "arrow.up.forward", tooltip: "Browse the catalog",
+      action, symbol: "arrow.up.forward", tooltip: String(localized: "Browse the catalog"),
       color: .tertiaryLabelColor)
     Layout.constrainToIconSize(action)
     action.setContentHuggingPriority(.required, for: .horizontal)

@@ -53,30 +53,30 @@ enum HFRepoResolver {
     var errorDescription: String? {
       switch self {
       case .invalidQuant(let q):
-        return "“\(q)” isn’t a known GGUF quantization label."
+        return String(localized: "“\(q)” isn’t a known GGUF quantization label.")
       case .repoNotFound(let repo):
-        return "Hugging Face returned 404 for \(repo)."
+        return String(localized: "Hugging Face returned 404 for \(repo).")
       case .gated(let repo):
-        return "\(repo) is gated or private."
+        return String(localized: "\(repo) is gated or private.")
       case .networkUnavailable:
-        return "Couldn’t reach Hugging Face."
+        return String(localized: "Couldn’t reach Hugging Face.")
       case .noGgufFiles(let repo):
-        return "\(repo) doesn’t contain any GGUF files."
+        return String(localized: "\(repo) doesn’t contain any GGUF files.")
       case .quantNotFound(let repo, let quant):
-        return "No \(quant) file found in \(repo)."
+        return String(localized: "No \(quant) file found in \(repo).")
       case .shardMissing(let repo, let shard):
-        return "Shard \(shard) is missing from \(repo)."
+        return String(localized: "Shard \(shard) is missing from \(repo).")
       case .noCompatibleFile(let repo, _, _):
-        return "\(repo) is too large for this Mac."
+        return String(localized: "\(repo) is too large for this Mac.")
       }
     }
 
     var recoverySuggestion: String? {
       switch self {
       case .gated:
-        return "Open Settings > Advanced and paste a Hugging Face access token that has access to this repo."
+        return String(localized: "Open Settings > Advanced and paste a Hugging Face access token that has access to this repo.")
       case .networkUnavailable:
-        return "Check your internet connection and try again."
+        return String(localized: "Check your internet connection and try again.")
       case .noCompatibleFile(_, let quant, let bytes):
         // An explanation, not a next step. This error means no quant in the
         // repo fits, and the download step would refuse any of them, so
@@ -86,7 +86,7 @@ enum HFRepoResolver {
         // Non-breaking space so the alert never wraps between "243.6" and "GB".
         let size = Format.gigabytes(bytes).replacingOccurrences(of: " ", with: "\u{00A0}")
         return
-          "Its smallest quant, \(quant) (\(size)), needs more memory than this Mac can give a model."
+          String(localized: "Its smallest quant, \(quant) (\(size)), needs more memory than this Mac can give a model.")
       default:
         return nil
       }

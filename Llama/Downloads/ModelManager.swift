@@ -210,7 +210,7 @@ class ModelManager: NSObject, URLSessionDataDelegate {
           self.failDownload(
             model: model,
             reason: gatedError?.errorDescription
-              ?? "Couldn't reach Hugging Face to start the download. This is usually a temporary rate limit or outage — try again in a few minutes, or sign in to Hugging Face in Settings to lift the limit."
+              ?? String(localized: "Couldn't reach Hugging Face to start the download. This is usually a temporary rate limit or outage — try again in a few minutes, or sign in to Hugging Face in Settings to lift the limit.")
           )
           return
         }
@@ -274,7 +274,7 @@ class ModelManager: NSObject, URLSessionDataDelegate {
         for writer in writers { writer.closeHandle() }
         failDownload(
           model: model,
-          reason: "Couldn't open staging file: \(error.localizedDescription)")
+          reason: String(localized: "Couldn't open staging file: \(error.localizedDescription)"))
         return
       }
 
@@ -998,7 +998,7 @@ class ModelManager: NSObject, URLSessionDataDelegate {
     guard model.isCompatible() else {
       let reason =
         model.incompatibilitySummary()
-        ?? "Not compatible with this Mac's memory"
+        ?? String(localized: "Not compatible with this Mac's memory")
       throw DownloadError.notCompatible(reason: reason)
     }
   }

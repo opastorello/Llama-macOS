@@ -22,7 +22,7 @@ enum UserSettings {
       case .fiveMin: return "5m"
       case .fifteenMin: return "15m"
       case .oneHour: return "1h"
-      case .disabled: return "Off"
+      case .disabled: return String(localized: "Off")
       }
     }
 

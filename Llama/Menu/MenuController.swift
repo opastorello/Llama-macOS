@@ -123,7 +123,7 @@ final class MenuController: NSObject, NSMenuDelegate {
     // Show after a short delay to ensure the status item is visible
     DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [weak self] in
       guard let self else { return }
-      self.showHint("Hello, I'm Llama")
+      self.showHint(String(localized: "Hello, I'm Llama"))
       UserSettings.hasSeenWelcome = true
     }
   }
@@ -486,8 +486,8 @@ final class MenuController: NSObject, NSMenuDelegate {
 
     ModalPresentation.showAlert(
       style: .warning,
-      title: "Download Failed",
-      body: "Could not download \(model.displayName).\n\n\(error)")
+      title: String(localized: "Download Failed"),
+      body: String(localized: "Could not download \(model.displayName).\n\n\(error)"))
   }
 
   private func refresh() {
@@ -534,7 +534,7 @@ final class MenuController: NSObject, NSMenuDelegate {
     // there's nothing to list) plus a terse placeholder, so the section still
     // anchors the menu. The decision to render at all lives in rebuildMenu.
     guard !models.isEmpty else {
-      menu.addItem(NSMenuItem.viewItem(with: SectionHeaderView(title: "Installed")))
+      menu.addItem(NSMenuItem.viewItem(with: SectionHeaderView(title: String(localized: "Installed"))))
       menu.addItem(NSMenuItem.viewItem(with: EmptyInstalledRow()))
       return
     }
@@ -542,7 +542,7 @@ final class MenuController: NSObject, NSMenuDelegate {
     // "Installed" header with a link to the running server's /models endpoint
     let host = LlamaServer.resolvedHost
     let modelsUrl = URL(string: "http://\(host):\(LlamaServer.port)/models")
-    let header = SectionHeaderView(title: "Installed", linkText: "models", linkUrl: modelsUrl)
+    let header = SectionHeaderView(title: String(localized: "Installed"), linkText: String(localized: "models"), linkUrl: modelsUrl)
     menu.addItem(NSMenuItem.viewItem(with: header))
 
     // Progressive disclosure: a long list pushes the footer (Settings/Quit) past
@@ -568,9 +568,9 @@ final class MenuController: NSObject, NSMenuDelegate {
 
     let hiddenCount = models.count - visibleModels.count
     if collapsed && hiddenCount > 0 {
-      addDisclosureRow(to: menu, title: "Show \(hiddenCount) more", expanded: false)
+      addDisclosureRow(to: menu, title: String(localized: "Show \(hiddenCount) more"), expanded: false)
     } else if isCollapsible && isInstalledListExpanded {
-      addDisclosureRow(to: menu, title: "Show less", expanded: true)
+      addDisclosureRow(to: menu, title: String(localized: "Show less"), expanded: true)
     }
   }
 
@@ -636,7 +636,7 @@ final class MenuController: NSObject, NSMenuDelegate {
   /// Replaces the list body with one model's page. A static header establishes
   /// identity and exposes page-level actions; settings below use the full width.
   private func addModelPage(to menu: NSMenu, model: Model, models: [Model]) {
-    let back = TextItemView(text: "Models", style: .back) { [weak self] in
+    let back = TextItemView(text: String(localized: "Models"), style: .back) { [weak self] in
       self?.selectedModelId = nil
       self?.rebuildMenuIfPossible()
     }
@@ -675,13 +675,13 @@ final class MenuController: NSObject, NSMenuDelegate {
     // blog post walks through a `/v1/systemone` request and response, and the
     // server README documents `/v1/embeddings`.
     if let howToUrl = Self.howToUseUrl(for: model.kind) {
-      let howToRow = ActionItemView(title: "How to use", symbol: "book") {}
+      let howToRow = ActionItemView(title: String(localized: "How to use"), symbol: "book") {}
       howToRow.onAction = { [weak howToRow] in
         howToRow?.openInBrowser(howToUrl)
       }
       menu.addItem(NSMenuItem.viewItem(with: howToRow))
     } else {
-      let chatRow = ActionItemView(title: "Chat with model", symbol: "bubble.left") {}
+      let chatRow = ActionItemView(title: String(localized: "Chat with model"), symbol: "bubble.left") {}
       chatRow.onAction = { [weak chatRow] in
         // Opened through the row so the menu dismisses with the navigation.
         guard let url = LlamaServer.webuiUrl(modelId: model.id) else { return }
@@ -689,7 +689,7 @@ final class MenuController: NSObject, NSMenuDelegate {
       }
       menu.addItem(NSMenuItem.viewItem(with: chatRow))
     }
-    let copyRow = ActionItemView(title: "Copy model ID", symbol: "doc.on.doc") {}
+    let copyRow = ActionItemView(title: String(localized: "Copy model ID"), symbol: "doc.on.doc") {}
     copyRow.onAction = { [weak copyRow] in
       Clipboard.copy(model.id)
       copyRow?.flashConfirmation()
@@ -711,7 +711,7 @@ final class MenuController: NSObject, NSMenuDelegate {
     // lesson, since the builder exists to answer the questions the bare curl
     // left you with (how do I turn thinking off, add a schema, send an image).
     if model.kind == .chat {
-      let builderRow = ActionItemView(title: "Build an API request", symbol: "curlybraces") {}
+      let builderRow = ActionItemView(title: String(localized: "Build an API request"), symbol: "curlybraces") {}
       builderRow.onAction = { [weak builderRow] in
         // Opened through the row so the menu dismisses with the navigation --
         // same as Chat with model above.
@@ -729,7 +729,7 @@ final class MenuController: NSObject, NSMenuDelegate {
       ?? ModelAliases.names(for: model.id).joined(separator: ", ")
     if !aliases.isEmpty {
       menu.addItem(NSMenuItem.viewItem(with: ActionItemView(
-        title: "Aliases", symbol: "tag", detail: aliases
+        title: String(localized: "Aliases"), symbol: "tag", detail: aliases
       ) { [weak self] in
         self?.openSettings(tab: .aliases)
       }))
@@ -737,7 +737,7 @@ final class MenuController: NSObject, NSMenuDelegate {
     // The HF model card is where the id pays off -- license, description, the
     // org's other quants. Every managed model is HF-backed, so the id maps
     // straight to a repo URL.
-    let hfRow = ActionItemView(title: "View on Hugging Face", symbol: "arrow.up.right") {}
+    let hfRow = ActionItemView(title: String(localized: "View on Hugging Face"), symbol: "arrow.up.right") {}
     hfRow.onAction = { [weak hfRow] in
       guard let url = URL(string: "https://huggingface.co/\(model.idBase)") else { return }
       hfRow?.openInBrowser(url)
@@ -754,14 +754,14 @@ final class MenuController: NSObject, NSMenuDelegate {
     // Sleeping counts as not active: its memory is already freed, so Load.
     if server.activeModelId == model.id {
       menu.addItem(NSMenuItem.viewItem(with: ActionItemView(
-        title: "Unload", symbol: "eject"
+        title: String(localized: "Unload"), symbol: "eject"
       ) { [weak self] in
         // Keep this action one-way, even if the model unloads before the click.
         self?.server.unloadModel(model)
       }))
     } else {
       menu.addItem(NSMenuItem.viewItem(with: ActionItemView(
-        title: "Load", symbol: "play"
+        title: String(localized: "Load"), symbol: "play"
       ) { [weak self] in
         // One-way like Unload: a click that lands after the model started
         // loading by other means just re-requests the same load.
@@ -771,8 +771,8 @@ final class MenuController: NSObject, NSMenuDelegate {
     // Disk footprint rides the Delete row -- it's the one place the number
     // informs a decision (how much space deleting reclaims).
     menu.addItem(NSMenuItem.viewItem(with: ActionItemView(
-      title: "Delete", symbol: "trash",
-      detail: model.totalSize, confirmTitle: "Click again to confirm"
+      title: String(localized: "Delete"), symbol: "trash",
+      detail: model.totalSize, confirmTitle: String(localized: "Click again to confirm")
     ) { [weak self] in
       self?.actionHandler.delete(model: model)
     }))
@@ -803,7 +803,7 @@ final class MenuController: NSObject, NSMenuDelegate {
     // Self-describing header: a curated subset recommended for this Mac
     // ("recommended" signals it's not the full compatible set, and the per-Mac
     // framing explains why a family can appear at two sizes).
-    let header = SectionHeaderView(title: "Recommended for your Mac")
+    let header = SectionHeaderView(title: String(localized: "Recommended for your Mac"))
     menu.addItem(NSMenuItem.viewItem(with: header))
 
     for suggestion in suggestions {
@@ -849,7 +849,7 @@ final class MenuController: NSObject, NSMenuDelegate {
   /// to fix. Clicking reveals the file, since fixing it means editing it.
   private func addOverridesIgnoredWarning(to menu: NSMenu, option: String) {
     let warningView = TextItemView(
-      text: "Unknown option ‘\(option)’. Ignoring \(UserModelOverrides.filename).",
+      text: String(localized: "Unknown option ‘\(option)’. Ignoring \(UserModelOverrides.filename)."),
       style: .description,
       onAction: {
         NSWorkspace.shared.activateFileViewerSelecting([UserModelOverrides.fileURL])
@@ -861,7 +861,7 @@ final class MenuController: NSObject, NSMenuDelegate {
 
   private func addFolderWarning(to menu: NSMenu) {
     let warningView = TextItemView(
-      text: "Model directory not available. Check Settings.",
+      text: String(localized: "Model directory not available. Check Settings."),
       style: .description,
       // Straight to the tab with the setting -- Advanced isn't where someone
       // would look for it first.

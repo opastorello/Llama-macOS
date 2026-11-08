@@ -10,11 +10,11 @@ enum LlamaServerError: Error, LocalizedError, Equatable {
   var errorDescription: String? {
     switch self {
     case .launchFailed(let reason):
-      return "Failed to start server: \(reason)"
+      return String(localized: "Failed to start server: \(reason)")
     case .invalidPath(let path):
-      return "Invalid file: \(path)"
+      return String(localized: "Invalid file: \(path)")
     case .portInUse(let port, let by):
-      return "Port \(port) is in use by \(by)"
+      return String(localized: "Port \(port) is in use by \(by)")
     }
   }
 }
@@ -709,8 +709,8 @@ class LlamaServer {
         } else {
           self.state = .error(
             .launchFailed(
-              self.rejectedOption.map { "Unknown option ‘\($0)’ in \(UserModelOverrides.filename)" }
-                ?? "Process crashed"))
+              self.rejectedOption.map { String(localized: "Unknown option ‘\($0)’ in \(UserModelOverrides.filename)") }
+                ?? String(localized: "Process crashed")))
         }
       }
     }
@@ -720,7 +720,7 @@ class LlamaServer {
       self.activeProcess = process
       attachOutputHandlers(for: process)
     } catch {
-      let errorMessage = "Process launch failed: \(error.localizedDescription)"
+      let errorMessage = String(localized: "Process launch failed: \(error.localizedDescription)")
       logger.error("Failed to launch process: \(error)")
       self.state = .error(.launchFailed(errorMessage))
       self.modelStatuses = [:]

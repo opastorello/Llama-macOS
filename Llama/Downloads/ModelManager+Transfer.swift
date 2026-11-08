@@ -224,7 +224,7 @@ extension ModelManager {
     let minThreshold: Int64 = 1_000_000
     if fileSize <= minThreshold {
       try? FileManager.default.removeItem(at: writer.partialURL)
-      handleDownloadFailure(model: model, reason: "file too small (\(fileSize) B)")
+      handleDownloadFailure(model: model, reason: String(localized: "file too small (\(fileSize) B)"))
       return
     }
 
@@ -236,7 +236,7 @@ extension ModelManager {
       try? FileManager.default.removeItem(at: writer.partialURL)
       handleDownloadFailure(
         model: model,
-        reason: "File verification failed — the partial download was corrupt. Try again."
+        reason: String(localized: "File verification failed — the partial download was corrupt. Try again.")
       )
       return
     }
@@ -304,18 +304,18 @@ extension ModelManager {
     switch status {
     case 401:
       return
-        "Hugging Face requires authentication for this download. Sign in to Hugging Face in Settings > Advanced and try again."
+        String(localized: "Hugging Face requires authentication for this download. Sign in to Hugging Face in Settings > Advanced and try again.")
     case 403, 429:
       return
-        "Hugging Face refused the download (HTTP \(status)). This usually means a rate limit — try again in a few minutes, or sign in to Hugging Face in Settings to lift the limit."
+        String(localized: "Hugging Face refused the download (HTTP \(status)). This usually means a rate limit — try again in a few minutes, or sign in to Hugging Face in Settings to lift the limit.")
     case 404:
       return
-        "Hugging Face returned 404 for this file. The repo may have moved or been removed."
+        String(localized: "Hugging Face returned 404 for this file. The repo may have moved or been removed.")
     case 500...599:
       return
-        "Hugging Face is temporarily unavailable (HTTP \(status)). Try again in a few minutes."
+        String(localized: "Hugging Face is temporarily unavailable (HTTP \(status)). Try again in a few minutes.")
     default:
-      return "Download failed with HTTP \(status)."
+      return String(localized: "Download failed with HTTP \(status).")
     }
   }
 
@@ -433,7 +433,7 @@ extension ModelManager {
         )
         handleDownloadFailure(
           model: model,
-          reason: "Couldn't reopen staging file for retry: \(error.localizedDescription)"
+          reason: String(localized: "Couldn't reopen staging file for retry: \(error.localizedDescription)")
         )
         return
       }

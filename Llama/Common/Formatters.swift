@@ -194,13 +194,13 @@ extension Format {
     downloadedBytes: Int64, totalBytes: Int64, paused: Bool,
     bytesPerSecond: Int64? = nil
   ) -> NSAttributedString {
-    var text = "\(bytesAdaptive(downloadedBytes)) of \(bytesAdaptive(totalBytes))"
+    var text = String(localized: "\(bytesAdaptive(downloadedBytes)) of \(bytesAdaptive(totalBytes))")
     if paused {
-      text += " · Paused"
+      text += " · " + String(localized: "Paused")
     } else if let bps = bytesPerSecond {
       text += " · \(bytesAdaptive(bps))/s"
     } else {
-      text += " · Starting…"
+      text += " · " + String(localized: "Starting…")
     }
     return NSAttributedString(
       string: text,
@@ -246,15 +246,15 @@ extension Format {
 
       // Context tier or status for sideloaded models pending/failed MemProfile
       if model.ctxBytesPer1kTokens == 0 {
-        result.append(NSAttributedString(string: "estimating...", attributes: secondaryAttributes))
+        result.append(NSAttributedString(string: String(localized: "estimating..."), attributes: secondaryAttributes))
       } else if model.ctxBytesPer1kTokens < 0 {
-        result.append(NSAttributedString(string: "4k ctx", attributes: secondaryAttributes))
+        result.append(NSAttributedString(string: String(localized: "4k ctx"), attributes: secondaryAttributes))
       } else if let overridden = UserModelOverrides.overriddenCtxSize(for: model.id) {
         // The user pinned ctx-size in models.user.ini, so the effective tier
         // below is not what the server is running. Show the real value.
         result.append(
           NSAttributedString(
-            string: "\(Format.ctxOverride(overridden)) ctx", attributes: secondaryAttributes))
+            string: String(localized: "\(Format.ctxOverride(overridden)) ctx"), attributes: secondaryAttributes))
       } else if let tier = model.effectiveCtxTier {
         // Show only the device-fit tier (e.g. "4k ctx"). The model's native max
         // and projected memory usage are available on the model page, so the

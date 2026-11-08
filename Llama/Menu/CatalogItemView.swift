@@ -28,7 +28,7 @@ final class CatalogItemView: ItemView {
   private var subtitleText: String {
     let size = suggestion.sizeLabel ?? ""
     guard suggestion.isGoodFirstModel else { return size }
-    return size.isEmpty ? "Good first model" : "Good first model  ∣  \(size)"
+    return size.isEmpty ? String(localized: "Good first model") : String(localized: "Good first model  ∣  \(size)")
   }
 
   /// Title: the parsed view of the id the suggestion resolves to — the same
@@ -54,7 +54,7 @@ final class CatalogItemView: ItemView {
     iconView.inactiveTintColor = Theme.Colors.modelIconTint
 
     Theme.configure(
-      installImageView, symbol: "arrow.down", tooltip: "Install model",
+      installImageView, symbol: "arrow.down", tooltip: String(localized: "Install model"),
       color: .tertiaryLabelColor)
 
     titleLabel.attributedStringValue = titleText

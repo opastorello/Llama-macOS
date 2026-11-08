@@ -58,7 +58,7 @@ final class NetworkExposureGuard {
     UserSettings.setNetworkAccess(.off)
     NotificationCenter.default.post(
       name: .LBShowMenuHint, object: nil,
-      userInfo: ["message": "Network access turned off — Tailscale changed"])
+      userInfo: ["message": String(localized: "Network access turned off — Tailscale changed")])
   }
 
   /// Turns exposure off if the current network isn't the one it was granted on.
@@ -89,6 +89,6 @@ final class NetworkExposureGuard {
     UserSettings.setNetworkAccess(.off)
     NotificationCenter.default.post(
       name: .LBShowMenuHint, object: nil,
-      userInfo: ["message": "Network access turned off — new network"])
+      userInfo: ["message": String(localized: "Network access turned off — new network")])
   }
 }

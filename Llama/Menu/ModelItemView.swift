@@ -119,7 +119,7 @@ final class ModelItemView: ItemView, NSGestureRecognizerDelegate {
       model.brandLogoAsset.flatMap { NSImage(named: $0) }
       ?? NSImage(systemSymbolName: "cube.fill", accessibilityDescription: "Model")
 
-    Theme.configure(cancelImageView, symbol: "xmark", tooltip: "Cancel download")
+    Theme.configure(cancelImageView, symbol: "xmark", tooltip: String(localized: "Cancel download"))
     cancelImageView.isHidden = true
 
     // Disclosure chevron -- purely decorative, so it takes no gesture of its own
@@ -310,7 +310,7 @@ final class ModelItemView: ItemView, NSGestureRecognizerDelegate {
     let note =
       !isCompatible
       ? model.incompatibilitySummary()
-      : (server.didFailToLoad(model: model) ? "Couldn’t load" : nil)
+      : (server.didFailToLoad(model: model) ? String(localized: "Couldn’t load") : nil)
     // Subtitle swaps between size+ctx (for installed/available rows) and a
     // transfer readout while a download is in flight: "1.2 GB of 3.1 GB", plus
     // " · Paused" when interrupted.
@@ -336,7 +336,7 @@ final class ModelItemView: ItemView, NSGestureRecognizerDelegate {
     if showsPausedGlyph != isPaused {
       showsPausedGlyph = isPaused
       pausePlayImageView.image = Theme.symbolImage(isPaused ? "play.circle" : "pause.circle")
-      pausePlayImageView.toolTip = isPaused ? "Resume download" : "Pause download"
+      pausePlayImageView.toolTip = isPaused ? String(localized: "Resume download") : String(localized: "Pause download")
       pausePlayImageView.contentTintColor = pausePlayTint
     }
 

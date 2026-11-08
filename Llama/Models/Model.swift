@@ -246,8 +246,8 @@ enum ModelKind: String, Codable {
   var chipLabel: String? {
     switch self {
     case .chat: nil
-    case .decision: "Decision"
-    case .embedding: "Embedding"
+    case .decision: String(localized: "Decision")
+    case .embedding: String(localized: "Embedding")
     }
   }
 }

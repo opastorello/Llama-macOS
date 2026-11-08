@@ -17,7 +17,7 @@ final class EmptyInstalledRow: ItemView {
   init() {
     super.init(frame: .zero)
 
-    let label = Theme.tertiaryLabel("No models yet")
+    let label = Theme.tertiaryLabel(String(localized: "No models yet"))
     label.alignment = .center
     contentView.addSubview(label)
     // Center in the row rather than pinning to the leading edge — centered text

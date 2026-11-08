@@ -79,7 +79,7 @@ final class HeaderView: ItemView {
     // of times per tool they wire up, then never), and a hover-highlighted run
     // of text would be an interaction pattern that exists nowhere else here --
     // not for the chat link, not for the code button, not in the footer.
-    Theme.configure(copyButton, symbol: "doc.on.doc", tooltip: "Copy the base URL", pointSize: 10)
+    Theme.configure(copyButton, symbol: "doc.on.doc", tooltip: String(localized: "Copy the base URL"), pointSize: 10)
     copyButton.target = self
     copyButton.action = #selector(copyUrl)
 
@@ -89,7 +89,7 @@ final class HeaderView: ItemView {
     // as a second thing to do with the same glyph.
     // 10pt like the copy glyph: at 11 its box stood taller than everything else
     // on the line, which read as the line reaching up toward the title.
-    Theme.configure(qrButton, symbol: "qrcode", tooltip: "Show QR code", pointSize: 10)
+    Theme.configure(qrButton, symbol: "qrcode", tooltip: String(localized: "Show QR code"), pointSize: 10)
     qrButton.target = self
     qrButton.action = #selector(showQRCode)
     qrButton.isHidden = true
@@ -107,7 +107,7 @@ final class HeaderView: ItemView {
     // Spelled out rather than "WebUI": the person who came here to chat has no
     // reason to know that a web UI is a place rather than a setting.
     webUiLabel.attributedStringValue = NSAttributedString(
-      string: "Open chat",
+      string: String(localized: "Open chat"),
       attributes: Theme.secondaryAttributes(color: .linkColor)
     )
     webUiLabel.isSelectable = false
@@ -117,7 +117,7 @@ final class HeaderView: ItemView {
     // Shown in place of the chat link when the server is in an error state, so
     // the user has a way to retry from the menu.
     restartLabel.attributedStringValue = NSAttributedString(
-      string: "Retry",
+      string: String(localized: "Retry"),
       attributes: Theme.secondaryAttributes(color: .linkColor)
     )
     restartLabel.isSelectable = false
@@ -170,7 +170,7 @@ final class HeaderView: ItemView {
     // address row collapses to the retry, since showing an endpoint would
     // imply the server is up.
     if case .error(let err) = server.state {
-      let message = err.errorDescription ?? "Server error"
+      let message = err.errorDescription ?? String(localized: "Server error")
       setStatus(message, dot: .systemRed, tooltip: message)
       addressLabel.isHidden = true
       copyButton.isHidden = true
@@ -203,9 +203,9 @@ final class HeaderView: ItemView {
     // moments on the way to running, and the address stays valid through them.
     switch server.state {
     case .running:
-      setStatus(nil, dot: .systemGreen, tooltip: "Server running")
+      setStatus(nil, dot: .systemGreen, tooltip: String(localized: "Server running"))
     case .idle, .loading:
-      setStatus(nil, dot: Theme.Colors.textTertiary, tooltip: "Server restarting")
+      setStatus(nil, dot: Theme.Colors.textTertiary, tooltip: String(localized: "Server restarting"))
     case .error:
       break  // handled above
     }

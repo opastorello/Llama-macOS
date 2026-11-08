@@ -50,7 +50,7 @@ struct AliasesSettingsView: View {
             // An alias has to point at something; with nothing installed the
             // sheet would open onto an empty picker.
             .disabled(models.isEmpty)
-            .help(models.isEmpty ? "Install a model first." : "")
+            .help(models.isEmpty ? String(localized: "Install a model first.") : "")
         }
       }
     }
@@ -112,13 +112,13 @@ struct AliasesSettingsView: View {
   /// user's own config replaces the model's aliases.
   private func caution(for alias: ModelAlias) -> String? {
     if !models.contains(where: { $0.id == alias.modelId }) {
-      return "This model isn't installed, so requests for \(alias.name) fail until it is or you pick another."
+      return String(localized: "This model isn't installed, so requests for \(alias.name) fail until it is or you pick another.")
     }
     if let value = ModelAliases.overridden(for: alias.modelId),
       !value.split(separator: ",").map({ $0.trimmingCharacters(in: .whitespaces) })
         .contains(alias.name)
     {
-      return "\(UserModelOverrides.filename) sets this model's aliases to \(value), which replaces this one."
+      return String(localized: "\(UserModelOverrides.filename) sets this model's aliases to \(value), which replaces this one.")
     }
     return nil
   }

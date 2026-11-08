@@ -1,5 +1,7 @@
 # Llama
 
+**English** · [Português (Brasil)](README.pt-BR.md) · [Español](README.es.md)
+
 Llama is a macOS menu bar app for running local LLMs.
 
 [Watch a short intro](https://www.youtube.com/watch?v=w6dSNCg9I5k) 📽️
@@ -34,6 +36,7 @@ You can chat with any model in the built-in WebUI, connect other apps (coding ag
 - **Model recommendations** — a built-in list of models your Mac can run, installable in one click
 - **Standard storage** — models live in the Hugging Face cache, shared with `llama.cpp` and other tools
 - **Built on llama.cpp** — from the GGML org, developed alongside llama.cpp
+- **Multiple languages** — the app's interface is available in English, Portuguese (Brazil) and Spanish; pick one in Settings > General
 
 ## Example requests
 

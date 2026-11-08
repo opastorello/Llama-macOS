@@ -66,11 +66,11 @@ final class FooterView: ItemView {
 
     // Settings Button
     let settingsButton = FooterButton(
-      title: "Settings", target: self, action: #selector(openSettingsClicked))
+      title: String(localized: "Settings"), target: self, action: #selector(openSettingsClicked))
     settingsButton.translatesAutoresizingMaskIntoConstraints = false
 
     // Quit Button
-    let quitButton = FooterButton(title: "Quit", target: self, action: #selector(quitClicked))
+    let quitButton = FooterButton(title: String(localized: "Quit"), target: self, action: #selector(quitClicked))
     quitButton.translatesAutoresizingMaskIntoConstraints = false
 
     contentView.addSubview(versionLabel)

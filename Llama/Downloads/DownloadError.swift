@@ -8,9 +8,9 @@ enum DownloadError: Error, LocalizedError {
   var errorDescription: String? {
     switch self {
     case .notCompatible:
-      return "Model Not Compatible"
+      return String(localized: "Model Not Compatible")
     case .notEnoughDiskSpace:
-      return "Not Enough Disk Space"
+      return String(localized: "Not Enough Disk Space")
     }
   }
 
@@ -22,10 +22,10 @@ enum DownloadError: Error, LocalizedError {
       // after "This model". One label starts lowercase ("requires models
       // with ≥4k context"), hence the capitalized first letter.
       let sentence = reason.prefix(1).uppercased() + reason.dropFirst()
-      return "\(sentence). Choose a smaller model or upgrade your system memory."
+      return String(localized: "\(sentence). Choose a smaller model or upgrade your system memory.")
     case .notEnoughDiskSpace(let required, let available):
       return
-        "This model requires \(required) of free space, but only \(available) is available. Please free up some space."
+        String(localized: "This model requires \(required) of free space, but only \(available) is available. Please free up some space.")
     }
   }
 }

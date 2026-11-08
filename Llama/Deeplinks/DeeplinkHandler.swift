@@ -61,10 +61,10 @@ final class DeeplinkHandler {
       // anything else collapses to a generic title with the raw error as body.
       if let err = error as? HFRepoResolver.ResolveError {
         presentAlert(
-          title: err.errorDescription ?? "Couldn’t install this model.",
+          title: err.errorDescription ?? String(localized: "Couldn’t install this model."),
           body: err.recoverySuggestion)
       } else {
-        presentAlert(title: "Couldn’t install this model.", body: error.localizedDescription)
+        presentAlert(title: String(localized: "Couldn’t install this model."), body: error.localizedDescription)
       }
       return
     }
@@ -74,7 +74,7 @@ final class DeeplinkHandler {
       $0.id == resolved.modelId || $0.downloadUrl == resolved.mainUrl
     }) {
       logger.info("Deeplink \(resolved.modelId, privacy: .public) is already installed")
-      if announce { postHint("\(existing.displayName) is already installed") }
+      if announce { postHint(String(localized: "\(existing.displayName) is already installed")) }
       return
     }
 
@@ -93,10 +93,10 @@ final class DeeplinkHandler {
       // that the click landed. The bubble dismisses the moment they open the
       // menu, where progress is surfaced. Skipped for in-app clicks, where the
       // menu is already open and the row itself shows the download starting.
-      if announce { postHint("Downloading \(entry.displayName)…") }
+      if announce { postHint(String(localized: "Downloading \(entry.displayName)…")) }
     } catch {
       presentAlert(
-        title: "Couldn’t start the download.",
+        title: String(localized: "Couldn’t start the download."),
         body: (error as? LocalizedError)?.recoverySuggestion ?? error.localizedDescription)
     }
   }

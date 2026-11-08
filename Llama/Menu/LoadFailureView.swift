@@ -25,7 +25,7 @@ final class LoadFailureView: ItemView {
   private func setup() {
     widthAnchor.constraint(equalToConstant: Layout.menuWidth).isActive = true
 
-    let title = Theme.primaryLabel("Couldn’t load this model")
+    let title = Theme.primaryLabel(String(localized: "Couldn’t load this model"))
     let description = wrappingLabel(Self.explanation())
 
     // Same title + wrapped description pairing as the engine setup banner
@@ -46,7 +46,7 @@ final class LoadFailureView: ItemView {
       let version = install.currentVersion,
       version < LlamaBinaries.targetVersion
     else {
-      return "llama.cpp exited while loading it."
+      return String(localized: "llama.cpp exited while loading it.")
     }
     // Homebrew has one known update command; anything else is updated however
     // it was installed, which the app can't tell. Either way the running
@@ -54,9 +54,9 @@ final class LoadFailureView: ItemView {
     let howTo =
       install.currentOrigin == .brew
       // Non-breaking spaces keep the command on one line when the text wraps.
-      ? "Update it with “brew\u{00A0}upgrade\u{00A0}llama.cpp”, then restart Llama."
-      : "Update it, then restart Llama."
-    return "Your llama.cpp (\(version.tag)) may be too old for it. " + howTo
+      ? String(localized: "Update it with “brew\u{00A0}upgrade\u{00A0}llama.cpp”, then restart Llama.")
+      : String(localized: "Update it, then restart Llama.")
+    return String(localized: "Your llama.cpp (\(version.tag)) may be too old for it. \(howTo)")
   }
 
   private func wrappingLabel(_ text: String) -> NSTextField {

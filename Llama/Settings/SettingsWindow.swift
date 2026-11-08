@@ -241,11 +241,11 @@ enum SettingsTab: CaseIterable, Identifiable {
 
   var title: String {
     switch self {
-    case .general: "General"
-    case .network: "Network"
-    case .chat: "Chat"
-    case .aliases: "Aliases"
-    case .advanced: "Advanced"
+    case .general: String(localized: "General")
+    case .network: String(localized: "Network")
+    case .chat: String(localized: "Chat")
+    case .aliases: String(localized: "Aliases")
+    case .advanced: String(localized: "Advanced")
     }
   }
 
@@ -392,7 +392,7 @@ struct ServerCommandSheet: View {
   /// Built once per showing: the sheet is modal, so no setting can change
   /// while it's up.
   private let command =
-    LlamaServer.buildLaunchSpec()?.displayCommand ?? "llama not installed"
+    LlamaServer.buildLaunchSpec()?.displayCommand ?? String(localized: "llama not installed")
 
   var body: some View {
     VStack(alignment: .leading, spacing: 16) {
@@ -459,6 +459,7 @@ struct SettingsView: View {
 
   @State private var launchAtLogin = LaunchAtLogin.isEnabled
   @State private var sleepIdleTime = UserSettings.sleepIdleTime
+  @State private var appLanguage = AppLanguage.current
   @State private var agentMode = UserSettings.agentMode
   @State private var hfCacheDir = UserSettings.hfCacheDirectory
   @State private var globalShortcut = UserSettings.globalInputShortcut
@@ -509,8 +510,8 @@ struct SettingsView: View {
       // Launch at login section
       Section {
         SettingRow(
-          title: "Launch at login",
-          description: "Starts with your Mac and waits in the menu bar."
+          title: String(localized: "Launch at login"),
+          description: String(localized: "Starts with your Mac and waits in the menu bar.")
         ) {
           Toggle("", isOn: $launchAtLogin)
             .labelsHidden()
@@ -520,11 +521,40 @@ struct SettingsView: View {
         }
       }
 
+      // Language section
+      Section {
+        SettingRow(
+          title: String(localized: "Language"),
+          description: String(localized: "The language of the app. Changing it restarts Llama.")
+        ) {
+          Menu {
+            Picker("", selection: Binding(
+              get: { appLanguage },
+              set: { newValue in
+                guard newValue != appLanguage else { return }
+                appLanguage = newValue
+                AppLanguage.current = newValue
+                AppLanguage.offerRestart()
+              })
+            ) {
+              ForEach(AppLanguage.all) { language in
+                Text(language.displayName).tag(language)
+              }
+            }
+            .pickerStyle(.inline)
+            .labelsHidden()
+          } label: {
+            Text(appLanguage.displayName)
+          }
+          .fixedSize()
+        }
+      }
+
       // Sleep idle time section
       Section {
         SettingRow(
-          title: "Unload when idle",
-          description: "Frees memory by unloading the model after this long without use."
+          title: String(localized: "Unload when idle"),
+          description: String(localized: "Frees memory by unloading the model after this long without use.")
         ) {
           PillPicker(
             options: UserSettings.SleepIdleTime.allCases.map { ($0, $0.displayName) },
@@ -552,8 +582,8 @@ struct SettingsView: View {
       // Server port section
       Section {
         SettingRow(
-          title: "Server port",
-          description: "The port the server listens on. Default \(String(LlamaServer.defaultPort))."
+          title: String(localized: "Server port"),
+          description: String(localized: "The port the server listens on. Default \(String(LlamaServer.defaultPort)).")
         ) {
           HStack(spacing: 6) {
             // Only offer a reset when a custom port is set.
@@ -671,8 +701,8 @@ struct SettingsView: View {
       // download.
       Section {
         SettingRow(
-          title: "Model directory",
-          description: "Where downloaded models are stored."
+          title: String(localized: "Model directory"),
+          description: String(localized: "Where downloaded models are stored.")
         ) {
           HStack(spacing: 6) {
             // Only offer a reset when a custom directory is set.
@@ -706,8 +736,8 @@ struct SettingsView: View {
         // one. A pasted token's button reopens its sheet, where clearing it
         // brings sign-in back.
         SettingRow(
-          title: "Hugging Face account",
-          description: "Only needed for gated or private models."
+          title: String(localized: "Hugging Face account"),
+          description: String(localized: "Only needed for gated or private models.")
         ) {
           HStack(spacing: 6) {
             if let hfAccount {
@@ -762,8 +792,8 @@ struct SettingsView: View {
       // printed. Side by side because the log is the output of that command.
       Section {
         SettingRow(
-          title: "Server command",
-          description: "See exactly how the app starts the server for you."
+          title: String(localized: "Server command"),
+          description: String(localized: "See exactly how the app starts the server for you.")
         ) {
           Button("Show") { showingServerCommandSheet = true }
         }
@@ -772,8 +802,8 @@ struct SettingsView: View {
         // follows the file live and has search, so there's nothing to build or
         // maintain.
         SettingRow(
-          title: "Server log",
-          description: "Output from the current server session."
+          title: String(localized: "Server log"),
+          description: String(localized: "Output from the current server session.")
         ) {
           Button("Open") { openServerLog() }
         }
@@ -796,8 +826,8 @@ struct SettingsView: View {
         // network tab's caution (nested inside its option) doesn't get.
         VStack(alignment: .leading, spacing: 6) {
         SettingRow(
-          title: "Agent mode",
-          description: "Lets models read and edit files and run commands on this Mac."
+          title: String(localized: "Agent mode"),
+          description: String(localized: "Lets models read and edit files and run commands on this Mac.")
         ) {
           // The setter posts the settings-change notification, which restarts
           // the server with/without `--agent`.
@@ -825,8 +855,8 @@ struct SettingsView: View {
       // or a third-party app.
       Section {
         SettingRow(
-          title: "Quick prompt",
-          description: "A keyboard shortcut that opens a prompt window from any app."
+          title: String(localized: "Quick prompt"),
+          description: String(localized: "A keyboard shortcut that opens a prompt window from any app.")
         ) {
           HStack(spacing: 6) {
             // Resetting means clearing: no shortcut is the default.
@@ -858,8 +888,8 @@ struct SettingsView: View {
         // the grouped style doesn't rule separators between them.
         VStack(alignment: .leading, spacing: 6) {
         SettingRow(
-          title: "Custom web app",
-          description: "Serves your own web app in place of the built-in chat, at the same address as the API."
+          title: String(localized: "Custom web app"),
+          description: String(localized: "Serves your own web app in place of the built-in chat, at the same address as the API.")
         ) {
           HStack(spacing: 6) {
             // Resetting means going back to the built-in UI.
@@ -916,7 +946,7 @@ struct SettingsView: View {
   /// choice, so it has to be readable before it's made.
   private var customWebUICaution: String? {
     guard let who = networkAudience else { return nil }
-    return "Network access is on, so \(who) could read every file in the chosen folder."
+    return String(localized: "Network access is on, so \(who) could read every file in the chosen folder.")
   }
 
   /// Opens a folder picker and sets it as the custom web app.
@@ -933,8 +963,8 @@ struct SettingsView: View {
       panel.canChooseDirectories = true
       panel.canCreateDirectories = false
       panel.allowsMultipleSelection = false
-      panel.message = "Choose a folder with an index.html to serve as the web app"
-      panel.prompt = "Select"
+      panel.message = String(localized: "Choose a folder with an index.html to serve as the web app")
+      panel.prompt = String(localized: "Select")
       panel.directoryURL = customWebUIDir
 
       return panel.runModal() == .OK ? panel.url : nil
@@ -946,15 +976,15 @@ struct SettingsView: View {
     // the more specific message.
     if let marker = projectMarker(in: url) {
       ModalPresentation.showAlert(
-        style: .warning, title: "This folder has a \(marker)",
-        body: "The server hands out every file in the folder, so \(marker) would be readable too. Choose the folder with just the built web app -- usually build or dist.")
+        style: .warning, title: String(localized: "This folder has a \(marker)"),
+        body: String(localized: "The server hands out every file in the folder, so \(marker) would be readable too. Choose the folder with just the built web app -- usually build or dist."))
       return
     }
 
     guard LlamaServer.hasIndexPage(url) else {
       ModalPresentation.showAlert(
-        style: .warning, title: "No index.html in this folder",
-        body: "Choose the folder that holds your web app's index.html -- for a project with a build step, that's usually its build output.")
+        style: .warning, title: String(localized: "No index.html in this folder"),
+        body: String(localized: "Choose the folder that holds your web app's index.html -- for a project with a build step, that's usually its build output."))
       return
     }
 
@@ -995,7 +1025,7 @@ struct SettingsView: View {
   @ViewBuilder private var networkAccessControl: some View {
     if case .custom(let address) = networkAccess {
       SettingRow(
-        title: "Allow network access", description: "Bound to an address set outside the app."
+        title: String(localized: "Allow network access"), description: String(localized: "Bound to an address set outside the app.")
       ) {
         Text(address)
           .foregroundStyle(.secondary)
@@ -1008,9 +1038,9 @@ struct SettingsView: View {
         // description reads as belonging to the option below it as much as to
         // its own -- the pairing is what makes the list scannable.
         VStack(alignment: .leading, spacing: 8) {
-          networkAccessOption(.off, title: "Off")
+          networkAccessOption(.off, title: String(localized: "Off"))
           networkAccessOption(.tailscale, title: "Tailscale")
-          networkAccessOption(.localNetwork, title: "This network")
+          networkAccessOption(.localNetwork, title: String(localized: "This network"))
         }
       }
       .frame(maxWidth: .infinity, alignment: .leading)
@@ -1079,14 +1109,14 @@ struct SettingsView: View {
           if option == .localNetwork, agentMode {
             // "Would", not "gets": this shows on the option whether or not it's
             // selected, so it has to be true of a choice not yet made.
-            SettingCaution(text: "Agent mode is on, so anyone who connects would get file access.")
+            SettingCaution(text: String(localized: "Agent mode is on, so anyone who connects would get file access."))
               .padding(.top, 2)
           }
 
           // Same idea for a custom web app: every file in its folder is served,
           // so exposing the server exposes the folder.
           if option == .localNetwork, customWebUIDir != nil {
-            SettingCaution(text: "A custom web app is set, so anyone who connects could read every file in its folder.")
+            SettingCaution(text: String(localized: "A custom web app is set, so anyone who connects could read every file in its folder."))
               .padding(.top, 2)
           }
         }
@@ -1124,7 +1154,7 @@ struct SettingsView: View {
   /// status line.
   private var agentModeCaution: String? {
     guard let who = networkAudience else { return nil }
-    return "Network access is on, so \(who) could do this too."
+    return String(localized: "Network access is on, so \(who) could do this too.")
   }
 
   /// Who besides this Mac's user can reach the server, phrased to follow
@@ -1132,8 +1162,8 @@ struct SettingsView: View {
   /// whose risk grows with network access.
   private var networkAudience: String? {
     guard exposedBeyondThisMac else { return nil }
-    if case .custom = networkAccess { return "anything that can reach the server" }
-    return "anyone on your current network"
+    if case .custom = networkAccess { return String(localized: "anything that can reach the server") }
+    return String(localized: "anyone on your current network")
   }
 
   /// The address `option` binds, or nil when there's nothing true to print
@@ -1154,23 +1184,23 @@ struct SettingsView: View {
   private func networkAccessDescription(_ option: UserSettings.NetworkAccess) -> String {
     switch option {
     case .off:
-      return "Only this Mac can reach the server."
+      return String(localized: "Only this Mac can reach the server.")
     case .tailscale where tailscaleAddress == nil && networkAccess == .tailscale:
       // Selected, but there's no address to bind: the server has fallen back
       // to loopback on its own. Say so rather than describing what the setting
       // would do if Tailscale were running.
-      return "Tailscale isn't running, so only this Mac can reach the server for now."
+      return String(localized: "Tailscale isn't running, so only this Mac can reach the server for now.")
     case .tailscale where tailscaleAddress == nil:
       // Not "Requires Tailscale": detection is by address, so this also
       // covers Tailscale installed but signed out -- and that user would
       // read "requires Tailscale" as wrong rather than as an explanation.
-      return "Requires Tailscale to be running."
+      return String(localized: "Requires Tailscale to be running.")
     case .tailscale:
-      return "Reachable from your Tailscale devices, anywhere. Stays invisible on the network you're on."
+      return String(localized: "Reachable from your Tailscale devices, anywhere. Stays invisible on the network you're on.")
     case .localNetwork:
-      return "Anyone on your current network can reach the server. It has no password -- only turn this on for a network you trust."
+      return String(localized: "Anyone on your current network can reach the server. It has no password -- only turn this on for a network you trust.")
     case .custom:
-      return "Bound to an address set outside the app."
+      return String(localized: "Bound to an address set outside the app.")
     }
   }
 
@@ -1204,8 +1234,8 @@ struct SettingsView: View {
       panel.canChooseDirectories = true
       panel.canCreateDirectories = true
       panel.allowsMultipleSelection = false
-      panel.message = "Choose a directory for downloaded models"
-      panel.prompt = "Select"
+      panel.message = String(localized: "Choose a directory for downloaded models")
+      panel.prompt = String(localized: "Select")
 
       // Start in the current cache directory
       panel.directoryURL = hfCacheDir
@@ -1475,14 +1505,14 @@ struct ServerPortSheet: View {
 
     guard let port = parsedPort else {
       let range = UserSettings.serverPortRange
-      error = "Port must be between \(String(range.lowerBound)) and \(String(range.upperBound))."
+      error = String(localized: "Port must be between \(String(range.lowerBound)) and \(String(range.upperBound)).")
       return
     }
 
     // Re-selecting the current port is a no-op; skip the availability check,
     // which would otherwise fail because our own server already holds it.
     if port != currentPort && !LlamaServer.isPortAvailable(port) {
-      error = "Port \(String(port)) is already in use. Pick another."
+      error = String(localized: "Port \(String(port)) is already in use. Pick another.")
       return
     }
 

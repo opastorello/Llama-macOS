@@ -127,7 +127,7 @@ extension Model {
     if Double(ctxWindow) < Self.compatibilityCtxWindowTokens {
       return CompatibilityInfo(
         isCompatible: false,
-        incompatibilitySummary: "requires models with ≥4k context"
+        incompatibilitySummary: String(localized: "requires models with ≥4k context")
       )
     }
 
@@ -136,7 +136,7 @@ extension Model {
       let maxLabel = nativeMaxTier?.label ?? "\(ctxWindow / 1024)k"
       return CompatibilityInfo(
         isCompatible: false,
-        incompatibilitySummary: "model max is \(maxLabel)"
+        incompatibilitySummary: String(localized: "model max is \(maxLabel)")
       )
     }
 
@@ -159,7 +159,7 @@ extension Model {
       let commonSizes: [Double] = [8, 16, 18, 24, 32, 36, 48, 64, 96, 128, 192]
       let displayGb = commonSizes.first(where: { $0 >= gb }) ?? gb
 
-      return String(format: "Requires a Mac with %.0f GB+ of memory", displayGb)
+      return String(localized: "Requires a Mac with \(Int(displayGb)) GB+ of memory")
     }
 
     // No budget means we couldn't read the device's memory at all; report the

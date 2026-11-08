@@ -124,7 +124,7 @@ final class ExpandedModelDetailsView: ItemView {
         ?? model.effectiveCtxTier?.shortLabel ?? ContextTier.k4.shortLabel
       let source =
         overridden != nil
-        ? "Set in \(UserModelOverrides.filename)."
+        ? String(localized: "Set in \(UserModelOverrides.filename).")
         : """
           Fixed for models that don't chat: their inputs are short, and a \
           higher limit would only use more memory. Raise it with ctx-size \
@@ -132,18 +132,18 @@ final class ExpandedModelDetailsView: ItemView {
           """
       mainStack.addArrangedSubview(
         makeHeaderRow(
-          label: "Max input", detail: "\(limit) tokens",
-          infoDescription: "What is max input?",
+          label: String(localized: "Max input"), detail: String(localized: "\(limit) tokens"),
+          infoDescription: String(localized: "What is max input?"),
           toolTip: """
             The longest input this model accepts -- a longer one is rejected.
 
             \(source)
             """))
     } else if model.ctxBytesPer1kTokens == 0 {
-      mainStack.addArrangedSubview(makeInfoLabel("Estimating memory requirements..."))
+      mainStack.addArrangedSubview(makeInfoLabel(String(localized: "Estimating memory requirements...")))
     } else if model.ctxBytesPer1kTokens < 0 {
       mainStack.addArrangedSubview(
-        makeInfoLabel("Could not estimate memory — using 4k context"))
+        makeInfoLabel(String(localized: "Could not estimate memory — using 4k context")))
     } else if let overridden = UserModelOverrides.overriddenCtxSize(for: model.id) {
       // A `ctx-size` in models.user.ini beats whatever the picker would pick,
       // so showing the picker here would be a lie: the selection wouldn't
@@ -151,9 +151,9 @@ final class ExpandedModelDetailsView: ItemView {
       // where the value came from instead.
       mainStack.addArrangedSubview(
         makeInfoLabel(
-          "Context length \(Format.ctxOverride(overridden)) — set in \(UserModelOverrides.filename)",
+          String(localized: "Context length \(Format.ctxOverride(overridden)) — set in \(UserModelOverrides.filename)"),
           toolTip:
-            "Remove ctx-size from \((UserModelOverrides.fileURL.path as NSString).abbreviatingWithTildeInPath) to use the picker again."
+            String(localized: "Remove ctx-size from \((UserModelOverrides.fileURL.path as NSString).abbreviatingWithTildeInPath) to use the picker again.")
         ))
     } else {
       // A "Context length" header, then the two-line segments below (tier
@@ -213,8 +213,8 @@ final class ExpandedModelDetailsView: ItemView {
       // memory is reserved on load, it's a hard ceiling, and bigger costs more.
       mainStack.addArrangedSubview(
         makeHeaderRow(
-          label: "Context length", detail: "memory use",
-          infoDescription: "What is context length?",
+          label: String(localized: "Context length"), detail: String(localized: "memory use"),
+          infoDescription: String(localized: "What is context length?"),
           toolTip: """
             How much of the conversation the model can remember at once. Bigger \
             sizes remember more, but use more memory and run a little slower.
@@ -282,7 +282,7 @@ final class ExpandedModelDetailsView: ItemView {
     guard memoryMb > 0 else {
       return model.incompatibilitySummary(ctxWindowTokens: Double(tier.rawValue))
     }
-    return "Too large for a \(gbLabel(mb: memoryMb)) Mac."
+    return String(localized: "Too large for a \(gbLabel(mb: memoryMb)) Mac.")
   }
 
   /// Creates one clickable segment: the tier label over its memory cost,

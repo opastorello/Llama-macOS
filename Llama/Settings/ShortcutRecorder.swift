@@ -34,13 +34,13 @@ extension GlobalHotkey.Combo {
   /// from a fixed table, character keys from the current keyboard layout.
   private static func keyName(for keyCode: Int) -> String {
     if let special = specialKeyNames[keyCode] { return special }
-    return layoutKeyName(for: keyCode) ?? "Key \(keyCode)"
+    return layoutKeyName(for: keyCode) ?? String(localized: "Key \(keyCode)")
   }
 
   /// Keys whose layout translation is empty or unreadable (whitespace,
   /// control, navigation, function keys).
   private static let specialKeyNames: [Int: String] = [
-    kVK_Space: "Space",
+    kVK_Space: String(localized: "Space"),
     kVK_Return: "↩",
     kVK_Tab: "⇥",
     kVK_Escape: "⎋",
@@ -120,7 +120,10 @@ struct ShortcutRecorder: View {
     Button {
       recording ? stopRecording() : startRecording()
     } label: {
-      Text(recording ? "Press shortcut…" : (combo?.displayString ?? "Record shortcut"))
+      Text(
+        recording
+          ? String(localized: "Press shortcut…")
+          : (combo?.displayString ?? String(localized: "Record shortcut")))
         .foregroundStyle(recording || combo == nil ? .secondary : .primary)
     }
     // While armed, the button takes keyboard focus so the system draws its

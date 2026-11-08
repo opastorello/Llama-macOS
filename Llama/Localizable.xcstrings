@@ -1,0 +1,3590 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "%@ (not installed)": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ (no instalado)"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ (não instalado)"
+          }
+        }
+      }
+    },
+    "%@ ctx": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ ctx"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ ctx"
+          }
+        }
+      }
+    },
+    "%@ defines a model named %@.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ define un modelo llamado %@."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ define um modelo chamado %@."
+          }
+        }
+      }
+    },
+    "%@ doesn’t contain any GGUF files.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ no contiene ningún archivo GGUF."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ não contém nenhum arquivo GGUF."
+          }
+        }
+      }
+    },
+    "%@ is already installed": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ ya está instalado"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ já está instalado"
+          }
+        }
+      }
+    },
+    "%@ is gated or private.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ es restringido o privado."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ é restrito ou privado."
+          }
+        }
+      }
+    },
+    "%@ is too large for this Mac.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ es demasiado grande para este Mac."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ é grande demais para este Mac."
+          }
+        }
+      }
+    },
+    "%@ of %@": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ de %@"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ de %@"
+          }
+        }
+      }
+    },
+    "%@ sets this model's aliases to %@, which replaces this one.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ establece los alias de este modelo en %@, lo que sustituye a este."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ define os aliases deste modelo como %@, o que substitui este."
+          }
+        }
+      }
+    },
+    "%@ tokens": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ tokens"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ tokens"
+          }
+        }
+      }
+    },
+    "%@. Choose a smaller model or upgrade your system memory.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@. Elige un modelo más pequeño o usa un Mac con más memoria."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@. Escolha um modelo menor ou use um Mac com mais memória."
+          }
+        }
+      }
+    },
+    "4k ctx": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "4k ctx"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "4k ctx"
+          }
+        }
+      }
+    },
+    "A custom web app is set, so anyone who connects could read every file in its folder.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hay una app web personalizada configurada, así que cualquiera que se conecte podría leer todos los archivos de su carpeta."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Há um app web personalizado configurado, então qualquer pessoa que se conectar poderia ler todos os arquivos da pasta dele."
+          }
+        }
+      }
+    },
+    "A keyboard shortcut that opens a prompt window from any app.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un atajo de teclado que abre una ventana de prompt desde cualquier app."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Um atalho de teclado que abre uma janela de prompt a partir de qualquer app."
+          }
+        }
+      }
+    },
+    "Add": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añadir"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adicionar"
+          }
+        }
+      }
+    },
+    "Add Alias…": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añadir alias…"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adicionar alias…"
+          }
+        }
+      }
+    },
+    "Add alias": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añadir alias"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adicionar alias"
+          }
+        }
+      }
+    },
+    "Address": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dirección"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Endereço"
+          }
+        }
+      }
+    },
+    "Advanced": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avanzado"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avançado"
+          }
+        }
+      }
+    },
+    "Agent mode": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modo agente"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modo agente"
+          }
+        }
+      }
+    },
+    "Agent mode is on, so anyone who connects would get file access.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El modo agente está activado, así que cualquiera que se conecte tendría acceso a los archivos."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O modo agente está ativado, então qualquer pessoa que se conectar teria acesso aos arquivos."
+          }
+        }
+      }
+    },
+    "Aliases": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alias"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aliases"
+          }
+        }
+      }
+    },
+    "Allow network access": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permitir acceso a la red"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permitir acesso à rede"
+          }
+        }
+      }
+    },
+    "Anyone on your current network can reach the server. It has no password -- only turn this on for a network you trust.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cualquiera en tu red actual puede acceder al servidor. No tiene contraseña: actívalo solo en una red de confianza."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Qualquer pessoa na sua rede atual pode acessar o servidor. Ele não tem senha: ative apenas em uma rede de confiança."
+          }
+        }
+      }
+    },
+    "Ask Llama…": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pregunta a Llama…"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pergunte ao Llama…"
+          }
+        }
+      }
+    },
+    "Bound to an address set outside the app.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vinculado a una dirección definida fuera de la app."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vinculado a um endereço definido fora do app."
+          }
+        }
+      }
+    },
+    "Browse models": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Explorar modelos"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Explorar modelos"
+          }
+        }
+      }
+    },
+    "Browse the catalog": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Explorar el catálogo"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Explorar o catálogo"
+          }
+        }
+      }
+    },
+    "Build an API request": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crear una solicitud de API"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Montar uma requisição de API"
+          }
+        }
+      }
+    },
+    "Cancel": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancelar"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancelar"
+          }
+        }
+      }
+    },
+    "Cancel download": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancelar descarga"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancelar download"
+          }
+        }
+      }
+    },
+    "Changes restart the server, which unloads the current model.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los cambios reinician el servidor, lo que descarga el modelo actual."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As alterações reiniciam o servidor, o que descarrega o modelo atual."
+          }
+        }
+      }
+    },
+    "Chat": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chat"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chat"
+          }
+        }
+      }
+    },
+    "Chat with model": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chatear con el modelo"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conversar com o modelo"
+          }
+        }
+      }
+    },
+    "Check your internet connection and try again.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comprueba tu conexión a internet e inténtalo de nuevo."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verifique sua conexão com a internet e tente novamente."
+          }
+        }
+      }
+    },
+    "Choose a directory for downloaded models": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elige una carpeta para los modelos descargados"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Escolha uma pasta para os modelos baixados"
+          }
+        }
+      }
+    },
+    "Choose a folder with an index.html to serve as the web app": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elige una carpeta con un index.html para servir como app web"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Escolha uma pasta com um index.html para servir como app web"
+          }
+        }
+      }
+    },
+    "Choose the folder that holds your web app's index.html -- for a project with a build step, that's usually its build output.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elige la carpeta que contiene el index.html de tu app web. En un proyecto con paso de compilación, suele ser su salida de compilación."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Escolha a pasta que contém o index.html do seu app web. Em um projeto com etapa de build, geralmente é a saída do build."
+          }
+        }
+      }
+    },
+    "Choose…": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elegir…"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Escolher…"
+          }
+        }
+      }
+    },
+    "Click again to confirm": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Haz clic de nuevo para confirmar"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clique novamente para confirmar"
+          }
+        }
+      }
+    },
+    "Context length": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Longitud del contexto"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tamanho do contexto"
+          }
+        }
+      }
+    },
+    "Context length %@ — set in %@": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Longitud del contexto %@ — definida en %@"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tamanho do contexto %@ — definido em %@"
+          }
+        }
+      }
+    },
+    "Copy": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copiar"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copiar"
+          }
+        }
+      }
+    },
+    "Copy model ID": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copiar ID del modelo"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copiar ID do modelo"
+          }
+        }
+      }
+    },
+    "Copy the base URL": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copiar la URL base"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copiar a URL base"
+          }
+        }
+      }
+    },
+    "Could not download %@.\n\n%@": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se pudo descargar %@.\n\n%@"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível baixar %@.\n\n%@"
+          }
+        }
+      }
+    },
+    "Could not estimate memory — using 4k context": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Memoria no estimada — usando contexto de 4k"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Memória não estimada — usando contexto de 4k"
+          }
+        }
+      }
+    },
+    "Couldn't install the llama binary: %@": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se pudo instalar el binario de llama: %@"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível instalar o binário do llama: %@"
+          }
+        }
+      }
+    },
+    "Couldn't open staging file: %@": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se pudo abrir el archivo temporal: %@"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível abrir o arquivo temporário: %@"
+          }
+        }
+      }
+    },
+    "Couldn't reach Hugging Face to start the download. This is usually a temporary rate limit or outage — try again in a few minutes, or sign in to Hugging Face in Settings to lift the limit.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se pudo acceder a Hugging Face para iniciar la descarga. Suele ser un límite de solicitudes o una caída temporal: inténtalo de nuevo en unos minutos o inicia sesión en Hugging Face en Ajustes para quitar el límite."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível acessar o Hugging Face para iniciar o download. Geralmente é um limite de requisições ou uma instabilidade temporária — tente novamente em alguns minutos ou entre no Hugging Face em Ajustes para remover o limite."
+          }
+        }
+      }
+    },
+    "Couldn't reopen staging file for retry: %@": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se pudo reabrir el archivo temporal para reintentar: %@"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível reabrir o arquivo temporário para tentar de novo: %@"
+          }
+        }
+      }
+    },
+    "Couldn't unpack the llama binary: %@": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se pudo descomprimir el binario de llama: %@"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível descompactar o binário do llama: %@"
+          }
+        }
+      }
+    },
+    "Couldn’t complete sign-in: %@": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se pudo completar el inicio de sesión: %@"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível concluir o login: %@"
+          }
+        }
+      }
+    },
+    "Couldn’t download engine": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se pudo descargar el motor"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível baixar o motor"
+          }
+        }
+      }
+    },
+    "Couldn’t install this model.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se pudo instalar este modelo."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível instalar este modelo."
+          }
+        }
+      }
+    },
+    "Couldn’t load": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se pudo cargar"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Falha ao carregar"
+          }
+        }
+      }
+    },
+    "Couldn’t load this model": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se pudo cargar este modelo"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível carregar este modelo"
+          }
+        }
+      }
+    },
+    "Couldn’t reach Hugging Face.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se pudo acceder a Hugging Face."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível acessar o Hugging Face."
+          }
+        }
+      }
+    },
+    "Couldn’t sign in to Hugging Face": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se pudo iniciar sesión en Hugging Face"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível entrar no Hugging Face"
+          }
+        }
+      }
+    },
+    "Couldn’t start the download.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se pudo iniciar la descarga."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível iniciar o download."
+          }
+        }
+      }
+    },
+    "Create a token ↗": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crear un token ↗"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Criar um token ↗"
+          }
+        }
+      }
+    },
+    "Custom web app": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App web personalizada"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App web personalizado"
+          }
+        }
+      }
+    },
+    "Decision": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Decisión"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Decisão"
+          }
+        }
+      }
+    },
+    "Delete": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eliminar"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Excluir"
+          }
+        }
+      }
+    },
+    "Done": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hecho"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Concluído"
+          }
+        }
+      }
+    },
+    "Download Failed": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Descarga fallida"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Falha no download"
+          }
+        }
+      }
+    },
+    "Download failed with HTTP %lld.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La descarga falló con HTTP %lld."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O download falhou com HTTP %lld."
+          }
+        }
+      }
+    },
+    "Download failed: %@": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La descarga falló: %@"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O download falhou: %@"
+          }
+        }
+      }
+    },
+    "Downloading %@…": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Descargando %@…"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Baixando %@…"
+          }
+        }
+      }
+    },
+    "Downloading the engine. This only happens once.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Descargando el motor. Esto solo ocurre una vez."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Baixando o motor. Isso só acontece uma vez."
+          }
+        }
+      }
+    },
+    "Embedding": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Embedding"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Embedding"
+          }
+        }
+      }
+    },
+    "Enter a name.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Introduce un nombre."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Digite um nome."
+          }
+        }
+      }
+    },
+    "Estimating memory requirements...": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estimando los requisitos de memoria..."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estimando os requisitos de memória..."
+          }
+        }
+      }
+    },
+    "Failed to start server: %@": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Error al iniciar el servidor: %@"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Falha ao iniciar o servidor: %@"
+          }
+        }
+      }
+    },
+    "File verification failed — the partial download was corrupt. Try again.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La verificación del archivo falló: la descarga parcial estaba dañada. Inténtalo de nuevo."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A verificação do arquivo falhou — o download parcial estava corrompido. Tente novamente."
+          }
+        }
+      }
+    },
+    "Filter models…": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtrar modelos…"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtrar modelos…"
+          }
+        }
+      }
+    },
+    "Frees memory by unloading the model after this long without use.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Libera memoria descargando el modelo tras este tiempo sin uso."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Libera memória descarregando o modelo após este tempo sem uso."
+          }
+        }
+      }
+    },
+    "Full catalog on the web": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Catálogo completo en la web"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Catálogo completo na web"
+          }
+        }
+      }
+    },
+    "General": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "General"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geral"
+          }
+        }
+      }
+    },
+    "Good first model": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buen primer modelo"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bom primeiro modelo"
+          }
+        }
+      }
+    },
+    "Good first model  ∣  %@": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buen primer modelo  ∣  %@"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bom primeiro modelo  ∣  %@"
+          }
+        }
+      }
+    },
+    "Hello, I'm Llama": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hola, soy Llama"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Olá, eu sou o Llama"
+          }
+        }
+      }
+    },
+    "How to use": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cómo usar"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Como usar"
+          }
+        }
+      }
+    },
+    "Hugging Face account": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cuenta de Hugging Face"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conta do Hugging Face"
+          }
+        }
+      }
+    },
+    "Hugging Face didn’t authorize the app.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hugging Face no autorizó la app."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Hugging Face não autorizou o app."
+          }
+        }
+      }
+    },
+    "Hugging Face didn’t authorize the app: %@": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hugging Face no autorizó la app: %@"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Hugging Face não autorizou o app: %@"
+          }
+        }
+      }
+    },
+    "Hugging Face is temporarily unavailable (HTTP %lld). Try again in a few minutes.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hugging Face no está disponible temporalmente (HTTP %lld). Inténtalo de nuevo en unos minutos."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Hugging Face está temporariamente indisponível (HTTP %lld). Tente novamente em alguns minutos."
+          }
+        }
+      }
+    },
+    "Hugging Face refused the download (HTTP %lld). This usually means a rate limit — try again in a few minutes, or sign in to Hugging Face in Settings to lift the limit.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hugging Face rechazó la descarga (HTTP %lld). Normalmente indica un límite de solicitudes: inténtalo de nuevo en unos minutos o inicia sesión en Hugging Face en Ajustes para quitar el límite."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Hugging Face recusou o download (HTTP %lld). Geralmente isso indica um limite de requisições — tente novamente em alguns minutos ou entre no Hugging Face em Ajustes para remover o limite."
+          }
+        }
+      }
+    },
+    "Hugging Face requires authentication for this download. Sign in to Hugging Face in Settings > Advanced and try again.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hugging Face requiere autenticación para esta descarga. Inicia sesión en Hugging Face en Ajustes > Avanzado e inténtalo de nuevo."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Hugging Face exige autenticação para este download. Entre no Hugging Face em Ajustes > Avançado e tente novamente."
+          }
+        }
+      }
+    },
+    "Hugging Face returned 404 for %@.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hugging Face devolvió 404 para %@."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Hugging Face retornou 404 para %@."
+          }
+        }
+      }
+    },
+    "Hugging Face returned 404 for this file. The repo may have moved or been removed.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hugging Face devolvió 404 para este archivo. Es posible que el repositorio se haya movido o eliminado."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Hugging Face retornou 404 para este arquivo. O repositório pode ter sido movido ou removido."
+          }
+        }
+      }
+    },
+    "Hugging Face token": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Token de Hugging Face"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Token do Hugging Face"
+          }
+        }
+      }
+    },
+    "Install a model first.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Instala un modelo primero."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Instale um modelo primeiro."
+          }
+        }
+      }
+    },
+    "Install model": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Instalar modelo"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Instalar modelo"
+          }
+        }
+      }
+    },
+    "Installed": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modelos"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modelos"
+          }
+        }
+      }
+    },
+    "Invalid file: %@": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Archivo no válido: %@"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arquivo inválido: %@"
+          }
+        }
+      }
+    },
+    "Invalid token format": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Formato de token no válido"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Formato de token inválido"
+          }
+        }
+      }
+    },
+    "Its smallest quant, %@ (%@), needs more memory than this Mac can give a model.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Su cuantización más pequeña, %@ (%@), necesita más memoria de la que este Mac puede ofrecer a un modelo."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A menor quantização, %@ (%@), precisa de mais memória do que este Mac pode dar a um modelo."
+          }
+        }
+      }
+    },
+    "Key %lld": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tecla %lld"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tecla %lld"
+          }
+        }
+      }
+    },
+    "Language": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Idioma"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Idioma"
+          }
+        }
+      }
+    },
+    "Later": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Más tarde"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Depois"
+          }
+        }
+      }
+    },
+    "Launch at login": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir al iniciar sesión"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir ao iniciar sessão"
+          }
+        }
+      }
+    },
+    "Lets models read and edit files and run commands on this Mac.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permite que los modelos lean y editen archivos y ejecuten comandos en este Mac."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permite que os modelos leiam e editem arquivos e executem comandos neste Mac."
+          }
+        }
+      }
+    },
+    "Llama needs to download llama.cpp once, but the download failed. %@": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Llama necesita descargar llama.cpp una vez, pero la descarga falló. %@"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Llama precisa baixar o llama.cpp uma vez, mas o download falhou. %@"
+          }
+        }
+      }
+    },
+    "Load": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cargar"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Carregar"
+          }
+        }
+      }
+    },
+    "Max input": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Entrada máxima"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Entrada máxima"
+          }
+        }
+      }
+    },
+    "Model": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modelo"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modelo"
+          }
+        }
+      }
+    },
+    "Model Not Compatible": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modelo no compatible"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modelo incompatível"
+          }
+        }
+      }
+    },
+    "Model directory": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Carpeta de modelos"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pasta dos modelos"
+          }
+        }
+      }
+    },
+    "Model directory not available. Check Settings.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Carpeta de modelos no disponible. Revisa los Ajustes."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pasta dos modelos indisponível. Verifique os Ajustes."
+          }
+        }
+      }
+    },
+    "Models": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modelos"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modelos"
+          }
+        }
+      }
+    },
+    "Name": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nombre"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nome"
+          }
+        }
+      }
+    },
+    "Network": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Red"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rede"
+          }
+        }
+      }
+    },
+    "Network access is on, so %@ could do this too.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El acceso a la red está activado, así que %@ también podría hacer esto."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O acesso à rede está ativado, então %@ também poderia fazer isso."
+          }
+        }
+      }
+    },
+    "Network access is on, so %@ could read every file in the chosen folder.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El acceso a la red está activado, así que %@ podría leer todos los archivos de la carpeta elegida."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O acesso à rede está ativado, então %@ poderia ler todos os arquivos da pasta escolhida."
+          }
+        }
+      }
+    },
+    "Network access turned off — Tailscale changed": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acceso a la red desactivado: Tailscale cambió"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acesso à rede desativado — o Tailscale mudou"
+          }
+        }
+      }
+    },
+    "Network access turned off — new network": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acceso a la red desactivado: red nueva"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acesso à rede desativado — nova rede"
+          }
+        }
+      }
+    },
+    "No %@ file found in %@.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se encontró ningún archivo %@ en %@."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nenhum arquivo %@ encontrado em %@."
+          }
+        }
+      }
+    },
+    "No aliases yet.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aún no hay alias."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nenhum alias ainda."
+          }
+        }
+      }
+    },
+    "No index.html in this folder": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No hay index.html en esta carpeta"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sem index.html nesta pasta"
+          }
+        }
+      }
+    },
+    "No models match “%@”": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ningún modelo coincide con “%@”"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nenhum modelo corresponde a “%@”"
+          }
+        }
+      }
+    },
+    "No models yet": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aún no hay modelos"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nenhum modelo ainda"
+          }
+        }
+      }
+    },
+    "No prebuilt llama binary for this Mac (%@).": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No hay binario precompilado de llama para este Mac (%@)."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não há binário pré-compilado do llama para este Mac (%@)."
+          }
+        }
+      }
+    },
+    "Not Enough Disk Space": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Espacio en disco insuficiente"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Espaço em disco insuficiente"
+          }
+        }
+      }
+    },
+    "Not compatible with this Mac's memory": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No compatible con la memoria de este Mac"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Incompatível com a memória deste Mac"
+          }
+        }
+      }
+    },
+    "OK": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
+          }
+        }
+      }
+    },
+    "Off": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desactivado"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desativado"
+          }
+        }
+      }
+    },
+    "Only needed for gated or private models.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Necesario solo para modelos restringidos o privados."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Necessário apenas para modelos restritos ou privados."
+          }
+        }
+      }
+    },
+    "Only this Mac can reach the server.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solo este Mac puede acceder al servidor."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Somente este Mac pode acessar o servidor."
+          }
+        }
+      }
+    },
+    "Open": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir"
+          }
+        }
+      }
+    },
+    "Open Settings > Advanced and paste a Hugging Face access token that has access to this repo.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abre Ajustes > Avanzado y pega un token de acceso de Hugging Face que tenga acceso a este repositorio."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abra Ajustes > Avançado e cole um token de acesso do Hugging Face que tenha acesso a este repositório."
+          }
+        }
+      }
+    },
+    "Open chat": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir chat"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir chat"
+          }
+        }
+      }
+    },
+    "Open this on another device, or scan the code.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abre esto en otro dispositivo o escanea el código."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abra isto em outro dispositivo ou escaneie o código."
+          }
+        }
+      }
+    },
+    "Output from the current server session.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salida de la sesión actual del servidor."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saída da sessão atual do servidor."
+          }
+        }
+      }
+    },
+    "Pause download": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pausar descarga"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pausar download"
+          }
+        }
+      }
+    },
+    "Paused": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En pausa"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pausado"
+          }
+        }
+      }
+    },
+    "Port %@ is already in use. Pick another.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El puerto %@ ya está en uso. Elige otro."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A porta %@ já está em uso. Escolha outra."
+          }
+        }
+      }
+    },
+    "Port %lld is in use by %@": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El puerto %lld está en uso por %@"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A porta %lld está em uso por %@"
+          }
+        }
+      }
+    },
+    "Port must be between %@ and %@.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El puerto debe estar entre %@ y %@."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A porta deve estar entre %@ e %@."
+          }
+        }
+      }
+    },
+    "Press shortcut…": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pulsa el atajo…"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pressione o atalho…"
+          }
+        }
+      }
+    },
+    "Process crashed": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El proceso se bloqueó"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O processo travou"
+          }
+        }
+      }
+    },
+    "Process launch failed: %@": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Error al iniciar el proceso: %@"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Falha ao iniciar o processo: %@"
+          }
+        }
+      }
+    },
+    "Quick prompt": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prompt rápido"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prompt rápido"
+          }
+        }
+      }
+    },
+    "Quit": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salir"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sair"
+          }
+        }
+      }
+    },
+    "Reachable from your Tailscale devices, anywhere. Stays invisible on the network you're on.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accesible desde tus dispositivos Tailscale, desde cualquier lugar. Permanece invisible en la red en la que estás."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acessível dos seus dispositivos Tailscale, de qualquer lugar. Fica invisível na rede em que você está."
+          }
+        }
+      }
+    },
+    "Recommended for your Mac": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recomendados para tu Mac"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recomendados para o seu Mac"
+          }
+        }
+      }
+    },
+    "Record shortcut": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grabar atajo"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gravar atalho"
+          }
+        }
+      }
+    },
+    "Remove ctx-size from %@ to use the picker again.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quita ctx-size de %@ para volver a usar el selector."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Remova ctx-size de %@ para usar o seletor novamente."
+          }
+        }
+      }
+    },
+    "Remove this alias": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quitar este alias"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Remover este alias"
+          }
+        }
+      }
+    },
+    "Requests that name this alias go to the model you pick.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las solicitudes que usan este alias van al modelo que elijas."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Requisições que usam este alias vão para o modelo que você escolher."
+          }
+        }
+      }
+    },
+    "Requires Tailscale to be running.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Requiere que Tailscale esté en ejecución."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Requer o Tailscale em execução."
+          }
+        }
+      }
+    },
+    "Requires a Mac with %lld GB+ of memory": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Requiere un Mac con %lld GB+ de memoria"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Requer um Mac com %lld GB+ de memória"
+          }
+        }
+      }
+    },
+    "Restart Llama to change the language": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reinicia Llama para cambiar el idioma"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reinicie o Llama para mudar o idioma"
+          }
+        }
+      }
+    },
+    "Restart Now": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reiniciar ahora"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reiniciar agora"
+          }
+        }
+      }
+    },
+    "Restore the default": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restaurar el valor predeterminado"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restaurar o padrão"
+          }
+        }
+      }
+    },
+    "Resume download": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reanudar descarga"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Retomar download"
+          }
+        }
+      }
+    },
+    "Retry": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reintentar"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tentar novamente"
+          }
+        }
+      }
+    },
+    "Save": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Guardar"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salvar"
+          }
+        }
+      }
+    },
+    "See exactly how the app starts the server for you.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mira exactamente cómo la app inicia el servidor por ti."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Veja exatamente como o app inicia o servidor para você."
+          }
+        }
+      }
+    },
+    "Select": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seleccionar"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Selecionar"
+          }
+        }
+      }
+    },
+    "Send an alias as \"model\" in an API request, in place of a model ID. Each Mac can point the same alias at a different model, so the same code runs on all of them.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Envía un alias como \"model\" en una solicitud de API, en lugar del ID de un modelo. Cada Mac puede apuntar el mismo alias a un modelo distinto, así que el mismo código funciona en todos."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Envie um alias como \"model\" em uma requisição de API, no lugar do ID de um modelo. Cada Mac pode apontar o mesmo alias para um modelo diferente, então o mesmo código roda em todos eles."
+          }
+        }
+      }
+    },
+    "Server command": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comando del servidor"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comando do servidor"
+          }
+        }
+      }
+    },
+    "Server error": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Error del servidor"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erro do servidor"
+          }
+        }
+      }
+    },
+    "Server log": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Registro del servidor"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Log do servidor"
+          }
+        }
+      }
+    },
+    "Server port": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Puerto del servidor"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Porta do servidor"
+          }
+        }
+      }
+    },
+    "Server restarting": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Servidor reiniciando"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Servidor reiniciando"
+          }
+        }
+      }
+    },
+    "Server running": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Servidor en ejecución"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Servidor em execução"
+          }
+        }
+      }
+    },
+    "Serves your own web app in place of the built-in chat, at the same address as the API.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sirve tu propia app web en lugar del chat integrado, en la misma dirección que la API."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Serve o seu próprio app web no lugar do chat integrado, no mesmo endereço da API."
+          }
+        }
+      }
+    },
+    "Set in %@.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Definido en %@."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Definido em %@."
+          }
+        }
+      }
+    },
+    "Setting up llama…": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Configurando llama…"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Configurando o llama…"
+          }
+        }
+      }
+    },
+    "Settings": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajustes"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajustes"
+          }
+        }
+      }
+    },
+    "Settings...": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajustes..."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajustes..."
+          }
+        }
+      }
+    },
+    "Shard %@ is missing from %@.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Falta la parte %@ en %@."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A parte %@ está ausente em %@."
+          }
+        }
+      }
+    },
+    "Show": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar"
+          }
+        }
+      }
+    },
+    "Show %lld more": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar %lld más"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar mais %lld"
+          }
+        }
+      }
+    },
+    "Show QR code": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar código QR"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar QR code"
+          }
+        }
+      }
+    },
+    "Show less": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar menos"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar menos"
+          }
+        }
+      }
+    },
+    "Sign In…": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Iniciar sesión…"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Entrar…"
+          }
+        }
+      }
+    },
+    "Sign Out": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cerrar sesión"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sair da conta"
+          }
+        }
+      }
+    },
+    "Source code": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Código fuente"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Código-fonte"
+          }
+        }
+      }
+    },
+    "Space": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Espacio"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Espaço"
+          }
+        }
+      }
+    },
+    "Starting…": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Iniciando…"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Iniciando…"
+          }
+        }
+      }
+    },
+    "Starts with your Mac and waits in the menu bar.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se inicia con tu Mac y espera en la barra de menús."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inicia com o seu Mac e fica aguardando na barra de menus."
+          }
+        }
+      }
+    },
+    "Tailscale isn't running, so only this Mac can reach the server for now.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tailscale no está en ejecución, así que por ahora solo este Mac puede acceder al servidor."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Tailscale não está em execução, então por enquanto só este Mac pode acessar o servidor."
+          }
+        }
+      }
+    },
+    "The language of the app. Changing it restarts Llama.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El idioma de la app. Cambiarlo reinicia Llama."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O idioma do app. Mudar o idioma reinicia o Llama."
+          }
+        }
+      }
+    },
+    "The port the server listens on. Default %@.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El puerto en el que escucha el servidor. Predeterminado: %@."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A porta em que o servidor escuta. Padrão: %@."
+          }
+        }
+      }
+    },
+    "The server hands out every file in the folder, so %@ would be readable too. Choose the folder with just the built web app -- usually build or dist.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El servidor entrega todos los archivos de la carpeta, así que %@ también sería legible. Elige la carpeta solo con la app web compilada: normalmente build o dist."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O servidor entrega todos os arquivos da pasta, então %@ também ficaria legível. Escolha a pasta só com o app web compilado — geralmente build ou dist."
+          }
+        }
+      }
+    },
+    "The server stops while Llama restarts, and the loaded model is unloaded.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El servidor se detiene mientras Llama se reinicia y el modelo cargado se descarga."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O servidor para enquanto o Llama reinicia, e o modelo carregado é descarregado."
+          }
+        }
+      }
+    },
+    "The sign-in response didn’t match the request. Try again.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La respuesta del inicio de sesión no coincidió con la solicitud. Inténtalo de nuevo."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A resposta do login não correspondeu à requisição. Tente novamente."
+          }
+        }
+      }
+    },
+    "There's already an alias named %@.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ya existe un alias llamado %@."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Já existe um alias chamado %@."
+          }
+        }
+      }
+    },
+    "This folder has a %@": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Esta carpeta contiene %@"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Esta pasta contém %@"
+          }
+        }
+      }
+    },
+    "This model is gated. Sign in to Hugging Face in Settings > Advanced, then request access on its page:\n%@": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Este modelo está restringido. Inicia sesión en Hugging Face en Ajustes > Avanzado y solicita acceso en su página:\n%@"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Este modelo é restrito. Entre no Hugging Face em Ajustes > Avançado e solicite acesso na página dele:\n%@"
+          }
+        }
+      }
+    },
+    "This model isn't installed, so requests for %@ fail until it is or you pick another.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Este modelo no está instalado, así que las solicitudes para %@ fallan hasta que lo esté o elijas otro."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Este modelo não está instalado, então as requisições para %@ falham até que ele seja instalado ou você escolha outro."
+          }
+        }
+      }
+    },
+    "This model requires %@ of free space, but only %@ is available. Please free up some space.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Este modelo necesita %@ de espacio libre, pero solo hay %@ disponibles. Libera algo de espacio."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Este modelo precisa de %@ de espaço livre, mas apenas %@ estão disponíveis. Libere um pouco de espaço."
+          }
+        }
+      }
+    },
+    "This network": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Esta red"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Esta rede"
+          }
+        }
+      }
+    },
+    "Too large for a %@ Mac.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Demasiado grande para un Mac de %@."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grande demais para um Mac de %@."
+          }
+        }
+      }
+    },
+    "Unknown option ‘%@’ in %@": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Opción desconocida ‘%@’ en %@"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Opção desconhecida ‘%@’ em %@"
+          }
+        }
+      }
+    },
+    "Unknown option ‘%@’. Ignoring %@.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Opción desconocida ‘%@’. Ignorando %@."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Opção desconhecida ‘%@’. Ignorando %@."
+          }
+        }
+      }
+    },
+    "Unload": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Descargar de memoria"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Descarregar"
+          }
+        }
+      }
+    },
+    "Unload when idle": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Descargar al estar inactivo"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Descarregar quando ocioso"
+          }
+        }
+      }
+    },
+    "Update it with “brew upgrade llama.cpp”, then restart Llama.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Actualízalo con “brew upgrade llama.cpp” y reinicia Llama."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Atualize com “brew upgrade llama.cpp” e reinicie o Llama."
+          }
+        }
+      }
+    },
+    "Update it, then restart Llama.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Actualízalo y reinicia Llama."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Atualize-o e reinicie o Llama."
+          }
+        }
+      }
+    },
+    "Use Token…": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usar token…"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usar token…"
+          }
+        }
+      }
+    },
+    "Use lowercase letters, digits, dots, dashes, or underscores.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usa letras minúsculas, dígitos, puntos, guiones o guiones bajos."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Use letras minúsculas, dígitos, pontos, hifens ou sublinhados."
+          }
+        }
+      }
+    },
+    "View on Hugging Face": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ver en Hugging Face"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ver no Hugging Face"
+          }
+        }
+      }
+    },
+    "What is context length?": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Qué es la longitud del contexto?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O que é o tamanho do contexto?"
+          }
+        }
+      }
+    },
+    "What is max input?": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Qué es la entrada máxima?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O que é a entrada máxima?"
+          }
+        }
+      }
+    },
+    "Where downloaded models are stored.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dónde se guardan los modelos descargados."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Onde os modelos baixados são armazenados."
+          }
+        }
+      }
+    },
+    "Your Hugging Face account doesn’t have access to this model yet. Request access on its page, then try again once it’s granted:\n%@": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu cuenta de Hugging Face aún no tiene acceso a este modelo. Solicita acceso en su página e inténtalo de nuevo cuando te lo concedan:\n%@"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sua conta do Hugging Face ainda não tem acesso a este modelo. Solicite acesso na página dele e tente novamente quando for concedido:\n%@"
+          }
+        }
+      }
+    },
+    "Your llama.cpp (%@) may be too old for it. %@": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu llama.cpp (%@) puede ser demasiado antiguo para él. %@"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seu llama.cpp (%@) pode ser antigo demais para ele. %@"
+          }
+        }
+      }
+    },
+    "anyone on your current network": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "cualquiera en tu red actual"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "qualquer pessoa na sua rede atual"
+          }
+        }
+      }
+    },
+    "anything that can reach the server": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "cualquier cosa que pueda acceder al servidor"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "qualquer coisa que consiga acessar o servidor"
+          }
+        }
+      }
+    },
+    "code": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "code"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "code"
+          }
+        }
+      }
+    },
+    "estimating...": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "estimando..."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "estimando..."
+          }
+        }
+      }
+    },
+    "file too small (%lld B)": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "archivo demasiado pequeño (%lld B)"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "arquivo pequeno demais (%lld B)"
+          }
+        }
+      }
+    },
+    "hf_…": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "hf_…"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "hf_…"
+          }
+        }
+      }
+    },
+    "llama not installed": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "llama no instalado"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "llama não instalado"
+          }
+        }
+      }
+    },
+    "llama.cpp exited while loading it.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "llama.cpp se cerró al cargarlo."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O llama.cpp encerrou ao carregá-lo."
+          }
+        }
+      }
+    },
+    "memory use": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "uso de memoria"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "uso de memória"
+          }
+        }
+      }
+    },
+    "model max is %@": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "el máximo del modelo es %@"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "o máximo do modelo é %@"
+          }
+        }
+      }
+    },
+    "models": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "instalados"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "instalados"
+          }
+        }
+      }
+    },
+    "requires models with ≥4k context": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "requiere modelos con contexto ≥4k"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "exige modelos com contexto ≥4k"
+          }
+        }
+      }
+    },
+    "switch model": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "cambiar de modelo"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "trocar modelo"
+          }
+        }
+      }
+    },
+    "“%@” isn’t a known GGUF quantization label.": {
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“%@” no es una etiqueta de cuantización GGUF conocida."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“%@” não é um rótulo de quantização GGUF conhecido."
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

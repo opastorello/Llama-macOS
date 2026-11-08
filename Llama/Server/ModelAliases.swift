@@ -45,20 +45,20 @@ enum ModelAliases {
   ///   count as taken.
   static func validationError(for name: String, replacing: ModelAlias? = nil) -> String? {
     if name.isEmpty {
-      return "Enter a name."
+      return String(localized: "Enter a name.")
     }
     if !name.allSatisfy(allowedCharacters.contains) {
-      return "Use lowercase letters, digits, dots, dashes, or underscores."
+      return String(localized: "Use lowercase letters, digits, dots, dashes, or underscores.")
     }
     let taken = UserSettings.modelAliases.filter { $0 != replacing }.map(\.name)
     if taken.contains(name) {
-      return "There's already an alias named \(name)."
+      return String(localized: "There's already an alias named \(name).")
     }
     // Sections a user defined in models.user.ini are models too, under
     // whatever name they chose -- and the router refuses an alias that
     // matches a model's name.
     if UserModelOverrides.current.contains(where: { $0.name == name }) {
-      return "\(UserModelOverrides.filename) defines a model named \(name)."
+      return String(localized: "\(UserModelOverrides.filename) defines a model named \(name).")
     }
     return nil
   }
